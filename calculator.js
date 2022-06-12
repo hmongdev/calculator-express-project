@@ -4,9 +4,15 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello world!');
+    //this sends the index.html file to the server
+    //__dirname is the directory where the index.html file is located on our computer
+    console.log(__dirname); // => Users/default/Desktop/dev/calculator-express-practice
+
+    //tell the server to load the index.html file
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(3000, function () {
+    //when port 3000 is loaded, log this message:
     console.log('Server running on port 3000!');
 });
