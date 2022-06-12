@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yang2674/calculator-express-project/issues"
   },
-  "homepage": "https://github.com/yang2674/calculator-express-project#readme"
+  "homepage": "https://github.com/yang2674/calculator-express-project#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
