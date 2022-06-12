@@ -1,3 +1,4 @@
+//jshint esversion:6
 //require express module
 const express = require('express');
 const app = express();
@@ -7,5 +8,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, function () {
-    console.log('Your server has started on port 3000!');
+    console.log('Server running on port 3000!');
 });
