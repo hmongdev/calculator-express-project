@@ -13,8 +13,7 @@ app.get('/', (req, res) => {
 });
 
 //POST handle = what this'll do when we click the submit button
-app.post('/', (req, res) => {
-    //tell the server to load the index.html file
+app.post("/", function(req, res) {
     res.send('Thank you for posting that!');
 });
 
