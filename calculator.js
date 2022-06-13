@@ -12,6 +12,12 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
 
+//POST handle = what this'll do when we click the submit button
+app.post('/', (req, res) => {
+    //tell the server to load the index.html file
+    res.send('Thank you for posting that!');
+});
+
 app.listen(3000, function () {
     //when port 3000 is loaded, log this message:
     console.log('Server running on port 3000!');
